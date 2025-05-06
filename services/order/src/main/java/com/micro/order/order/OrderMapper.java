@@ -1,8 +1,8 @@
 package com.micro.order.order;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class OrderMapper {
 
     public Order toOrder(OrderRequest request) {

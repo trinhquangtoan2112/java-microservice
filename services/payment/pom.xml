@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.micro</groupId>
-	<artifactId>order</artifactId>
+	<artifactId>payment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>order</name>
+	<name>payment</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -52,8 +52,8 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
 		</dependency>
 
 		<dependency>
@@ -71,13 +71,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!-- kafka -->
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
+			<artifactId>spring-kafka-test</artifactId>
+			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
