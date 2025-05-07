@@ -15,7 +15,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -36,7 +35,6 @@ import lombok.Setter;
 public class Order {
 
     @Id
-    @GeneratedValue
     private Integer id;
 
     @Column(unique = true, nullable = false)
